@@ -1,0 +1,6 @@
+1.1-1: Describe your own real-world example that requires sorting. Describe one that requires finding the shortest distance between two points.
+ Sorting Example:
+Library books need to be sorted while storing, so that they can be quickly retrieved when searched by title, author, or genre.
+
+Shortest Distance Example:
+Finding the shortest route between my home and my favorite cafe using Google Maps, which applies shortest path algorithms like Dijkstra’s or A*.
