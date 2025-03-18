@@ -1,0 +1,7 @@
+1.1-2: Other than speed, what other measures of efficiency might you need to consider in a real-world setting?
+Besides speed (time complexity), other efficiency measures include:
+
+Space Complexity → How much memory the algorithm consumes.
+Fairness → Ensuring equal resource allocation in scheduling algorithms.
+Energy Efficiency → Important for battery-powered devices like smartphones.
+Scalability → Ability to handle increasing data loads efficiently.
