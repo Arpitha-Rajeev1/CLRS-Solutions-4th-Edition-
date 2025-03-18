@@ -1,0 +1,10 @@
+1.1-4: How are the shortest-path and traveling-salesperson problems similar? How are they different?
+Similarities:
+
+Both deal with graphs and finding optimal routes between points.
+Both are important in logistics, navigation, and networking.
+
+Differences:
+
+Shortest Path Problem: Finds the shortest route between two points (solvable in polynomial time with Dijkstra’s Algorithm).
+Traveling Salesperson Problem (TSP): Finds the shortest route that visits all points exactly once and returns to the start (NP-hard, requires approximations).
