@@ -1,0 +1,7 @@
+1.1-5: Suggest a real-world problem in which only the best solution will do. Then come up with one in which "approximately" the best solution is good enough.
+Exact Solution Example:
+
+Medical Diagnosis: The diagnosis and treatment plan for a patient must be 100% correct, as errors can have life-threatening consequences.
+Approximate Solution Example:
+
+Movie Recommendation System (Netflix, YouTube): Suggesting a "good enough" movie is acceptable; it doesn’t need to be the absolute best choice.
