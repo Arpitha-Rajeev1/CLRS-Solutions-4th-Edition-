@@ -1,0 +1,9 @@
+1.1-3: Select a data structure that you have seen, and discuss its strengths and limitations.
+Example: HashMap (Hash Table in Java, Python’s Dictionary)
+
+Strengths:
+Fast lookup, insertion, and deletion in O(1) average case.
+Useful for caching, database indexing, and load balancing.
+Limitations:
+Uses more memory than arrays or linked lists.
+Collisions can degrade performance to O(n) worst case.
