@@ -1,0 +1,4 @@
+What is the smallest value of n such that an algorithm whose running time is 100n^2 runs faster than an algorithm whose running time is 2 n on the same machine?
+
+We want that 100n^2 < 2n. note that if n = 14, this becomes 100(14)2 =19600 > 214 = 16384. For n = 15 it is 100(15)2 = 22500 < 2^15 = 32768. So,
+the answer is n = 15.
