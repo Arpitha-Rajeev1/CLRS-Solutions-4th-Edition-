@@ -1,0 +1,5 @@
+Suppose that for inputs of size n on a particular computer, insertion sort runs in 8n 2 steps and merge sort runs in 64 n lg n steps. For which values of n 
+does insertion sort beat merge sort?
+
+We wish to determine for which values of n the inequality 8n^2 < 64n log2(n)
+holds. This happens when n < 8 log2(n), or when n ≤ 43. In other words, insertion sort runs faster when we’re sorting at most 43 items. Otherwise merge sort is faster
