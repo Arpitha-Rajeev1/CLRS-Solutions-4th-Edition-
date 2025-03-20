@@ -1,0 +1,21 @@
+Consider the procedure SUM-ARRAY on the facing page. It computes the sum of the n numbers in array A[1:n]. State a loop invariant for this procedure, and use its initialization, maintenance, and termination 
+properties to show that the SUMARRAY procedure returns the sum of the numbers in A[1:n].
+
+A loop invariant is a property that holds before and after each iteration of a loop. For the SUM-ARRAY procedure, the loop invariant should express the fact that the sum computed so far is correct at each step.
+At the start of each iteration of the loop, the variable sum contains the sum of the first i-1 elements of the array A (i.e., A[1] to A[i-1]).
+
+1. Initialization (Before the first iteration)
+Before the loop starts, sum = 0 and i = 1.
+At this point, sum represents the sum of zero elements, which is correctly 0.
+The invariant holds initially.
+
+2. Maintenance (Preserving the Invariant)
+Suppose before the i-th iteration, sum correctly holds the sum of elements A[1] to A[i-1].
+In the i-th iteration, we update sum as: sum = sum + A[i]
+Now, sum correctly holds the sum of elements A[1] to A[i].
+This maintains the loop invariant.
+
+3. Termination (When the loop ends)
+The loop runs until i = n+1, meaning the last executed iteration is for i = n.
+At this point, the invariant ensures sum contains the sum of A[1] to A[n].
+The algorithm returns sum, which is the correct sum of the array.
