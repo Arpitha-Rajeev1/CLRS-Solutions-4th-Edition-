@@ -10,20 +10,3 @@ def ADD_BINARY_INTEGERS(A, B, n):
     C[n] = carry  # Store final carry at the end
 
     return C  # Return the resulting binary sum
-
-1. Initialization (Before the first iteration)
-Before the loop starts, i = 1.
-The subarray A[1:0] (an empty array) has been searched, and obviously, x is not there.
-The loop invariant holds at initialization.
-
-2. Maintenance (Preserving the Invariant)
-Suppose before iteration i, we have searched A[1:i-1], and x was not found.
-In iteration i, we check A[i].
-If A[i] == x, we return i, which is correct.
-Otherwise, we continue to the next iteration (i+1).
-Since we add one new element to the searched portion and x was not found in earlier iterations, the invariant remains true.
-
-3. Termination (When the loop ends)
-The loop terminates when i = n+1, meaning we have searched the entire array.
-If x was found, we have already returned i.
-If we reach the end and x was never found, we return NIL, correctly indicating that x is not in A.
