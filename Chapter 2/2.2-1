@@ -1,1 +1,2 @@
-$f(n) = \Theta(n^3)$
+f(n) = 𝚯(n³)
+This is because of the rate of growth that increases as the input grows and insignificant terms are ignored
