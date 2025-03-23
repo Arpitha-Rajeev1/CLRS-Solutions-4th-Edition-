@@ -1,0 +1,23 @@
+SELECTION-SORT(A, n)
+1. for i = 1 to n - 1
+2.     min_index = i
+3.     for j = i + 1 to n
+4.         if A[j] < A[min_index]
+5.             min_index = j
+6.     swap A[i] with A[min_index]
+
+Loop Invariant
+At the start of each iteration of the outer loop (line 1), the subarray A[1...i-1] consists of the smallest i-1 elements in sorted order.
+
+Proof by Induction:
+Initialization (Base Case, i = 1): Before the first iteration, no elements are sorted, which trivially satisfies the invariant.
+
+Maintenance (Inductive Step): In iteration i, the algorithm finds the smallest element in A[i...n] and swaps it with A[i].
+This ensures A[1...i] remains sorted and contains the i smallest elements.
+
+Termination: When i = n-1, the first n-1 elements are sorted, meaning the entire array is sorted.
+
+Why Stop at 𝑛−1 Elements?
+In the last iteration, when i = n-1, only one element (the last one) remains, and it is already in the correct position.
+
+Both worst case and best case is O(n^2) because the inner loop runs irrespective of the array is sorted or unsorted.
