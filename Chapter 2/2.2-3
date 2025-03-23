@@ -1,0 +1,18 @@
+Average Case Analysis
+Suppose we have an array of n elements, and the target element is equally likely to be any of them.
+If the element is found at index k, the algorithm performs k comparisons.
+The element could be at any index 1, 2, ..., n with equal probability 1/n
+
+Worst Case Analysis
+In the worst case, the element is not in the array or is the last element. This means the algorithm checks all n elements.
+
+Final Answer
+Average-case complexity: Θ(n)
+Worst-case complexity: Θ(n)
+
+Justification
+Best case: The element is the first one → Θ(1).
+
+Worst case: The element is the last or missing → Θ(n).
+
+Since we cannot predict where the element is located, the average number of comparisons is still Θ(n).
