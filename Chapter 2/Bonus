@@ -1,0 +1,39 @@
+INSERTION-SORT(A)
+1. for i = 2 to length(A)
+2.     key = A[i]
+3.     j = i - 1
+4.     while j > 0 and A[j] > key
+5.         A[j + 1] = A[j]
+6.         j = j - 1
+7.     A[j + 1] = key
+
+Best case: O(n)
+Worst case: O(n²)
+
+SELECTION-SORT(A)
+1. for i = 1 to length(A) - 1
+2.     min_index = i
+3.     for j = i + 1 to length(A)
+4.         if A[j] < A[min_index]
+5.             min_index = j
+6.     Swap A[i] with A[min_index]
+
+Best case: O(n²)
+Worst case: O(n²) (No improvement in best case)
+
+MERGE-SORT(A, left, right)
+1. if left < right
+2.     mid = (left + right) / 2
+3.     MERGE-SORT(A, left, mid)
+4.     MERGE-SORT(A, mid + 1, right)
+5.     MERGE(A, left, mid, right)
+
+MERGE(A, left, mid, right)
+1. Create two temporary arrays L and R
+2. Copy A[left...mid] into L and A[mid+1...right] into R
+3. Merge L and R back into A[left...right]
+4. Compare elements and insert them in sorted order
+5. Copy any remaining elements from L and R
+
+Best case: O(n log n)
+Worst case: O(n log n)
