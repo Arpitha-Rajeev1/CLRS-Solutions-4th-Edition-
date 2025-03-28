@@ -1,4 +1,4 @@
-Suppose that for inputs of size n on a particular computer, insertion sort runs in 8n 2 steps and merge sort runs in 64 n lg n steps. For which values of n 
+Suppose that for inputs of size n on a particular computer, insertion sort runs in 8n2 steps and merge sort runs in 64nlgn steps. For which values of n 
 does insertion sort beat merge sort?
 
 We wish to determine for which values of n the inequality 8n^2 < 64n log2(n)
