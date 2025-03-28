@@ -15,5 +15,5 @@ Either i > n1 (all elements from L are placed) or j > n2 (all elements from R ar
 
 The remaining elements in one of the arrays are still sorted and will be copied over in later while loops.
 
-Since all elements of R have already been placed, all remaining elements of L are greater than the last placed element in A.
-Since all elements of L have already been placed, all remaining elements of R are greater than the last placed element in A.
+If, Since all elements of R have already been placed, all remaining elements of L are greater than the last placed element in A.
+Else, Since all elements of L have already been placed, all remaining elements of R are greater than the last placed element in A.
