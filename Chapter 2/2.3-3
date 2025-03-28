@@ -1,0 +1,19 @@
+At the start of each iteration of this loop, the merged portion of the array contains the smallest i + j - 1 elements from L[1..n1] and R[1..n2] in sorted order.
+
+Proof:
+Initialization (Before Loop Starts):
+i = 1, j = 1. No elements are merged yet, so the sorted property trivially holds.
+
+Maintenance (Loop Execution):
+In each iteration, the loop selects the smaller element from L[i] and R[j] and places it in A[k].
+
+This ensures that A[1..k] remains sorted after every iteration.
+i or j is incremented accordingly.
+
+Termination (After Loop Ends):
+Either i > n1 (all elements from L are placed) or j > n2 (all elements from R are placed).
+
+The remaining elements in one of the arrays are still sorted and will be copied over in later while loops.
+
+Since all elements of R have already been placed, all remaining elements of L are greater than the last placed element in A.
+Since all elements of L have already been placed, all remaining elements of R are greater than the last placed element in A.
