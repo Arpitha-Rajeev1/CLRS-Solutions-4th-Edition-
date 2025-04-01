@@ -1,0 +1,4 @@
+To ensure the recursive call does not happen for an empty array i.e. for p > r, we should return when there is only one element i.e. when p = r. Instead of p != r,
+which will return even if we have p < r i.e. with more than one element which is not desired, we should change the condition to if p == r: return. This will ensure
+that the recursive call will not be called for p > r because it will return as soon as p == r. If the initial call is (A, 1, 1), then it will return because one 
+element is always sorted.
