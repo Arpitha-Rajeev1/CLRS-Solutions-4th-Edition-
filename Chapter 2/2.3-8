@@ -1,0 +1,14 @@
+Using Two-Pointer Algorithm
+
+TWO-SUM(S, x):
+Sort S  # O(n log n)
+left = 0, right = n - 1
+while left < right:
+  current_sum = S[left] + S[right]
+  if current_sum == x:
+    return True  # Found the pair
+  elif current_sum < x:
+    left = left + 1  
+  else:
+    right = right - 1 
+return False 
