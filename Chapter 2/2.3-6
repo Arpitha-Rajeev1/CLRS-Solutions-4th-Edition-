@@ -1,0 +1,10 @@
+def binarySearch(A, p, r, target):
+  while p <= r:
+    q = (p+r) // 2
+    if A[q] == target:
+      return q
+    else if target < A[q]:
+      r = q - 1
+    else:
+      p = q + 1
+  return NIL
