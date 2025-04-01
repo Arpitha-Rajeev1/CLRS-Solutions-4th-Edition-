@@ -1,4 +1,6 @@
-def binarySearch(A, p, r, target):
+def binarySearch(A, target):
+  p = 0
+  r = length(A) - 1
   while p <= r:
     q = (p+r) // 2
     if A[q] == target:
@@ -8,3 +10,26 @@ def binarySearch(A, p, r, target):
     else:
       p = q + 1
   return NIL
+
+// Recursive Solution
+def binarySearch(A, p, r, target):
+  if p <= r:
+    q = (p+r) // 2
+    if A[q] == target:
+      return q
+    else if target < A[q]:
+      return binarySearch(A, p, q-1)
+    else:
+      return binarySearch(A, q+1, r)
+  return NIL
+
+Key Idea: At each step, binary search reduces the problem size by half.
+
+Recurrence Relation:
+
+In the worst case, we continue dividing the array until we are left with one element.
+
+Let 𝑇(𝑛) be the worst-case number of comparisons needed to find (or not find). Since each step halves the problem size, the recurrence is:
+
+𝑇(𝑛) = 𝑇(𝑛/2) + 𝑂(1)
+The number of times we can halve n before reaching 1 element is at most logn
