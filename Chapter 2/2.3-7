@@ -1,0 +1,19 @@
+Binary Search can find the correct insertion position in O(logn) instead of O(n). However, the shifting of elements still takes O(n).
+Finding the position using Binary Search → O(logn)
+
+Shifting elements to insert → O(n)
+
+Total for each element → O(n+logn)=O(n)
+
+Total for all n elements → O(n^2)
+Thus, using binary search does not reduce the worst-case complexity because the dominant factor is still the shifting operation.
+
+INSERTION-SORT-BINARY(A)
+for j = 2 to length(A):
+  key = A[j]
+  pos = BINARY-SEARCH(A, key, 1, j-1)  
+  i = j - 1
+  while i ≥ pos:
+    A[i + 1] = A[i]
+    i = i - 1
+  A[pos] = key
