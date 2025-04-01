@@ -12,4 +12,4 @@ recuriveInsertion(A, n):
 Recurence relation: T(n)=T(n−1)+O(n)
 T(n−1)=T(n−2)+(n−1)
 T(2)=T(1)+2
-T(n)=1+2+3+...+n=O(n^2)
+T(n)=1+2+3+...+n = n*(n-1) // 2 = O(n^2)
