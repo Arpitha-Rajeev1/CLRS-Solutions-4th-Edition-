@@ -1,0 +1,2 @@
+Suppose that alpha is a fraction in the range 0 < alpha < 1. Show how to generalize the lower-bound argument for insertion sort to consider an input in which the alpha * n largest values start in the first alpha*n 
+positions. What additional restriction do you need to put on alpha? What value of alpha maximizes the number of times that the nlargest values must pass through each of the middle (1 - 2 alpha)n array positions?
