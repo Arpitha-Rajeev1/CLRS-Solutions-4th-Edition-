@@ -1,6 +1,9 @@
-The while loop from line 12-18, Loop invariant is:
-1. Initialization: Before the loop begins, all the elements in A are not sorted
-2. Maintainance: Before each iteration, the subarray in A will contain some elements from L and R all sorted
-3. Termination: Either L or R are completely copied to A in a sorted order and when the loop terminates the subarray is sorted
+let n = 2^k where k >= 1
+For k = 1, n = 2: T(n) = n * lgn to prove, for the base case T(2) = 2 * lg(2) = 2 * 1 = 2 
+Hence, base case is proved
 
-Other while loop will copy the rest of the elements in either L or R to the end of A, this will ensure every element is copied in a sorted order.
+For inductive step, T(n) = 2 * T(n/2) + n for k > 1 or n > 2
+we need to prove T(n) = n * lg(n) for the inductive step as well
+Let us assume, T(n/2) = (n/2) * lg(n/2) then
+T(n) = 2 * (n/2) * lg(n/2) + n = n * (lgn - lg2) + n = n * lgn - n + n = n * lgn
+Hence proved.
